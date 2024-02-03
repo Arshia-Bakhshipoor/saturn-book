@@ -1,0 +1,253 @@
+/*******************************************
+
+********SMALLER DESKTOPS (BELOW 1344px)*********
+
+*********************************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+}
+/*******************************************
+
+********LANDSCAPE TABLETS (BELOW 1088px)*********
+
+*********************************************/
+
+@media (max-width: 68em) {
+  html {
+    font-size: 56.25%;
+  }
+  .grid {
+    column-gap: 6.4rem;
+  }
+  .secend-header {
+    font-size: 3.6rem;
+  }
+  .hero-info {
+    font-size: 1.8rem;
+  }
+  header {
+    padding: 2.4rem 3.2rem;
+  }
+  .hero {
+    gap: 4.8rem;
+  }
+}
+
+/*******************************************
+
+******** TABLETS (BELOW 928px)*********
+
+*********************************************/
+
+@media (max-width: 58em) {
+  html {
+    font-size: 50%;
+  }
+  .section-hero {
+    padding: 4.8rem 0 6.4rem 0;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-info {
+    margin-bottom: 6.4rem;
+  }
+  /*padding: 3.2rem 8rem 12.8rem 8rem;
+  gap: 6.4rem;*/
+  .hero-image {
+    width: 87%;
+  }
+  .hero-text-box,
+  .hero-image-box {
+    text-align: center;
+  }
+  .third-header {
+    font-size: 2.4rem;
+  }
+  .step-description {
+    font-size: 1.6rem;
+  }
+  .step-number {
+    font-size: 6.2rem;
+  }
+  .book-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  .price-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ultra-plan {
+    grid-column: 1 / -1;
+    width: 46.5%;
+    margin: 0 auto;
+  }
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cta-form {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 6.4rem;
+  }
+  .cta .secend-header {
+    font-size: 4rem;
+  }
+  .book-content {
+    padding: 2.4rem 3rem 3rem 3rem;
+  }
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+  }
+  .main-nav {
+    background-color: rgba(231, 245, 247, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    transform: translateX(100%);
+    /*1- Hide */
+    opacity: 0;
+    /* 2- Make it unacceessinle to mouse and keyboard */
+    pointer-events: none;
+    /* 3- Hide it from screen reader */
+    visibility: hidden;
+  }
+  .nav-open.main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+  /* test */
+  .nav-open.icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open.icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+}
+/*******************************************
+
+********SMALLER TABLETS (BELOW 704px)*********
+
+*********************************************/
+@media (max-width: 44em) {
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .genres {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  .secend-header {
+    font-size: 3rem;
+    margin-bottom: 6.4rem;
+  }
+}
+/*******************************************
+
+********PHONES (BELOW 544px)*********
+
+*********************************************/
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+  .ultra-plan {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+    row-gap: 3.2rem;
+  }
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+  .first-header {
+    font-size: 3.5rem;
+  }
+  .hero-info {
+    font-size: 1.4rem;
+  }
+  .third-header {
+    line-height: 1.4;
+  }
+  .books-header {
+    font-size: 2.8rem;
+  }
+  .mini-footer {
+    font-size: 1.1rem;
+  }
+  .list {
+    margin-left: 3rem;
+  }
+  .hero-image {
+    width: 100%;
+  }
+  .customer-text {
+    font-size: 1.6rem;
+  }
+  .customers {
+    padding: 3rem 4rem;
+  }
+  .cta-text-box .cta-header {
+    font-size: 3rem;
+  }
+  .cta-text {
+    font-size: 1.6rem;
+  }
+  .form-btn {
+    padding: 2rem 1.2rem;
+    margin-top: 1.6rem;
+  }
+  .cta-text-box {
+    padding: 3rem;
+  }
+  .books {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .price-grid {
+    margin: 0 4.6rem;
+  }
+}
+/********SMALLER (BELOW 320PX)*********/
+
+@media (max-width: 20em) {
+  html {
+    font-size: 44%;
+  }
+}
